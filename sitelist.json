@@ -1,0 +1,344 @@
+[
+  {
+    "name": "Buzzfeednews",
+    "url": "www.buzzfeednews.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Vice",
+    "url": "www.vice.com",
+    "bias": "Left"
+  },
+  {
+    "name": "CNN Opinion",
+    "url": "www.cnn.com/opinions",
+    "bias": "Left",
+    "opinion": true
+  },
+  {
+    "name": "Democracy Now!",
+    "url": "www.democracynow.org",
+    "bias": "Left"
+  },
+  {
+    "name": "The Daily Beast",
+    "url": "www.thedailybeast.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Huffpost",
+    "url": "www.huffpost.com",
+    "bias": "Left"
+  },
+  {
+    "name": "The Intercept",
+    "url": "www.theintercept.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Jacobin",
+    "url": "www.jacobinmag.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Mother Jones",
+    "url": "www.motherjones.com",
+    "bias": "Left"
+  },
+  {
+    "name": "MSNBC",
+    "url": "www.msnbc.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Newsweek",
+    "url": "www.newsweek.com",
+    "bias": "Left"
+  },
+  {
+    "name": "The New Yorker",
+    "url": "www.newyorker.com",
+    "bias": "Left"
+  },
+  {
+    "name": "The New York Times (opinion)",
+    "url": "www.nytimes.com/section/opinion",
+    "bias": "Left",
+    "opinion": true
+  },
+  {
+    "name": "The Nation",
+    "url": "www.thenation.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Slate",
+    "url": "www.slate.com",
+    "bias": "Left"
+  },
+  {
+    "name": "Vox",
+    "url": "www.vox.com",
+    "bias": "Left"
+  },
+  {
+    "name": "ABC News",
+    "url": "www.abcnews.go.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "Associated Press (politics)",
+    "url": "www.ap.org/en-us/topics/politics",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "The Atlantic",
+    "url": "www.theatlantic.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "Bloomberg",
+    "url": "www.bloomberg.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "CBS",
+    "url": "www.cbs.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "CNN News",
+    "url": "www.cnn.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "The Economist",
+    "url": "www.economist.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "The Guardian",
+    "url": "www.theguardian.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "NBC",
+    "url": "www.nbc.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "The New York Times (news)",
+    "url": "www.nytimes.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "NPR (opinion)",
+    "url": "www.npr.org/sections/opinion",
+    "bias": "Lean Left",
+    "opinion": true
+  },
+  {
+    "name": "Politico",
+    "url": "www.politico.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "Propublica",
+    "url": "www.propublica.org",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "Time",
+    "url": "www.time.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "The Washington Post",
+    "url": "www.washingtonpost.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "Yahoo! News",
+    "url": "www.news.yahoo.com",
+    "bias": "Lean Left"
+  },
+  {
+    "name": "Associated Press",
+    "url": "www.ap.org",
+    "bias": "Center"
+  },
+  {
+    "name": "Axios",
+    "url": "www.axios.com",
+    "bias": "Center"
+  },
+  {
+    "name": "BBC",
+    "url": "www.bbc.com",
+    "bias": "Center"
+  },
+  {
+    "name": "The Christian Science Monitor",
+    "url": "www.csmonitor.com",
+    "bias": "Center"
+  },
+  {
+    "name": "NPR (news)",
+    "url": "www.npr.org/sections/news",
+    "bias": "Center"
+  },
+  {
+    "name": "Reuters",
+    "url": "www.reuters.com",
+    "bias": "Center"
+  },
+  {
+    "name": "Real Clear Politics",
+    "url": "www.realclearpolitics.com",
+    "bias": "Center"
+  },
+  {
+    "name": "The Hill",
+    "url": "www.thehill.com",
+    "bias": "Center"
+  },
+  {
+    "name": "USA Today",
+    "url": "www.usatoday.com",
+    "bias": "Center"
+  },
+  {
+    "name": "The Wall Street Journal",
+    "url": "www.wsj.com",
+    "bias": "Center"
+  },
+  {
+    "name": "The American Conservative",
+    "url": "www.theamericanconservative.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "The Dispatch",
+    "url": "www.thedispatch.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "The Epoch Times",
+    "url": "www.theepochtimes.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "Fox News ",
+    "url": "www.foxnews.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "Market Watch",
+    "url": "www.marketwatch.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "Newsmax (news Only)",
+    "url": "www.newsmax.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "New York Post (news Only)",
+    "url": "www.nypost.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "The Post Millennial",
+    "url": "www.thepostmillennial.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "Reason",
+    "url": "www.reason.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "The Wall Stree Journal (opinion)",
+    "url": "www.wsj.com/news/opinion",
+    "bias": "Lean Right",
+    "opinion": true
+  },
+  {
+    "name": "Washington Examiner",
+    "url": "www.washingtonexaminer.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "The Washington Times",
+    "url": "www.washingtontimes.com",
+    "bias": "Lean Right"
+  },
+  {
+    "name": "The American Spectator",
+    "url": "www.spectator.org",
+    "bias": "Right"
+  },
+  {
+    "name": "Breitbart",
+    "url": "www.breitbart.com",
+    "bias": "Right"
+  },
+  {
+    "name": "The Blaze",
+    "url": "www.theblaze.com",
+    "bias": "Right"
+  },
+  {
+    "name": "CBN",
+    "url": "www.cbn.com",
+    "bias": "Right"
+  },
+  {
+    "name": "The Daily Caller",
+    "url": "www.dailycaller.com",
+    "bias": "Right"
+  },
+  {
+    "name": "Daily Mail",
+    "url": "www.dailymail.co.uk",
+    "bias": "Right"
+  },
+  {
+    "name": "Daily Wire",
+    "url": "www.dailywire.com",
+    "bias": "Right"
+  },
+  {
+    "name": "Fox News (opinion)",
+    "url": "www.foxnews.com/opinion",
+    "bias": "Right",
+    "opinion": true
+  },
+  {
+    "name": "The Federalist",
+    "url": "www.thefederalist.com",
+    "bias": "Right"
+  },
+  {
+    "name": "National Review",
+    "url": "www.nationalreview.com",
+    "bias": "Right"
+  },
+  {
+    "name": "New York Post (opinion)",
+    "url": "www.nypost.com/opinion",
+    "bias": "Right",
+    "opinion": true
+  },
+  {
+    "name": "Newsmax (opinion)",
+    "url": "www.newsmax.com/insiders",
+    "bias": "Right",
+    "opinion": true
+  },
+  {
+    "name": "OAN",
+    "url": "www.oann.com",
+    "bias": "Right"
+  }
+]
