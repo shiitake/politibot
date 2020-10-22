@@ -3,6 +3,7 @@ const Discord = require('discord.js');
 const config = require('./config.json');
 const siteList = require('./sitelist.json');
 const url = require('url');
+const token = process.env.BOT_TOKEN
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
@@ -66,4 +67,4 @@ client.on('message', message => {
 	//console.log(message.content);
 });
 
-client.login(config.token);
+client.login(token);

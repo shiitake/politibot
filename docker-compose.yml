@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+	politibot:
+		image: node:10-alpine
+		build: .
+    container_name: politibot
+    environment:
+      BOT_TOKEN: /run/secrets/bot_token
+    secrets:
+      - api_token
+
+secrets:
+  bot_token:
+    file: secret_bot_token.txt
