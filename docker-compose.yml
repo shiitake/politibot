@@ -1,7 +1,7 @@
-version: '3.8'
+version: '3.7'
 services:
   politibot:
-    image: node:10-alpine
+    image: node:15-alpine
     build: .
     container_name: politibot
     environment:
