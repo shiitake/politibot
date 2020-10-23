@@ -1,12 +1,15 @@
 const fs = require('fs');
+const path = require('path');
 const Discord = require('discord.js');
 const config = require('./config.json');
 const siteList = require('./sitelist.json');
 const url = require('url');
-const token = process.env.BOT_TOKEN
+const token = fs.readFileSync(path.resolve(__dirname, process.env.BOT_TOKEN), 'utf8').toString();
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
+
+console.log('token: ' + token);
 
 client.once('ready', () => {
 	console.log('Ready!');
@@ -46,7 +49,7 @@ client.on('message', message => {
 			console.log(user + ' posted a url: '+ myUrl);
 
 			var hostname = url.parse(myUrl).hostname;			
-			var path = url.parse(myUrl).path;
+			var urlPath = url.parse(myUrl).path;
 			var matchingSite = siteList.find(x => x.url === hostname);
 			if (matchingSite === null || matchingSite === undefined)
 			{
