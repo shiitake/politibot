@@ -21,6 +21,11 @@ client.once('ready', () => {
 
 var addList = [];
 
+function addChannel (channel) {
+	addList.push(channel);
+	console.log(addList);
+}
+
 
 client.on('message', message => {
 	//ignore the bot
@@ -34,18 +39,24 @@ client.on('message', message => {
 		const commandName = args.shift().toLowerCase();		
 		if (!client.commands.has(commandName)) return;
 
-		const command = client.commands.get(commandName);
+		// const command = client.commands.get(commandName);
 
-		try {
-			command.execute(message.args);
-		} catch (error) {
-			console.error(error);
-			message.reply('there was an error trying to execute that commands');
-		}
-		if (command == "add")
+		// try {
+		// 	command.execute(message, message.args);
+		// } catch (error) {
+		// 	console.error(error);
+		// 	message.reply('there was an error trying to execute that commands');
+		// }
+		if (commandName == "add")
 		{
 			addList.push(message.channel.name);
 			message.channel.send('Thanks for adding Politibot.');
+			console.log(addList);
+		}
+		if (commandName == "stop")
+		{
+			addList.splice(addList.indexOf(message.channel.name), 1);
+			message.channel.send('Politibot will not both you anymore.');
 			console.log(addList);
 		}
 	}
@@ -71,14 +82,16 @@ client.on('message', message => {
 			}
 			else
 			{
-				message.channel.send(`${matchingSite.name} has a bias rating of: ${matchingSite.bias}` , {
-					files: [{
-						attachment: 'images/AllSidesMediaBiasChart-Version3.jpg',
-						name: 'AllSidesMediaBiasChart-Version3.jpg'
-					}]
-				})				
-				.then(console.log)
-				.catch(console.error);				
+				const allSidesEmbed = new Discord.MessageEmbed()
+					.setColor('#0099ff')
+					.setTitle( matchingSite.name )
+					//.setURL('https://www.allsides.com/media-bias/media-bias-ratings')
+					.setDescription(`${matchingSite.name} has a bias rating of: ${matchingSite.bias}. See more [here](https://www.allsides.com/media-bias/media-bias-ratings)`)
+				
+				message.channel.send(allSidesEmbed);
+				// message.channel.send(`${matchingSite.name} has a bias rating of: ${matchingSite.bias}. See more here http://www.allsides.com`)				
+				// .then(console.log)
+				// .catch(console.error);				
 			}
 		}
 	//console.log(message.content);
