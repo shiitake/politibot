@@ -4,7 +4,7 @@ const Discord = require('discord.js');
 const config = require('./config.json');
 const siteList = require('./sitelist.json');
 const url = require('url');
-const token = fs.readFileSync(path.resolve(__dirname, process.env.BOT_TOKEN), 'utf8').toString();
+const token = fs.readFileSync(path.resolve(__dirname, process.env.BOT_TOKEN), 'utf8').toString().trim();
 const client = new Discord.Client();
 
 client.commands = new Discord.Collection();
@@ -56,7 +56,7 @@ client.on('message', message => {
 		if (commandName == "stop")
 		{
 			addList.splice(addList.indexOf(message.channel.name), 1);
-			message.channel.send('Politibot will not both you anymore.');
+			message.channel.send('Politibot will not bother you anymore.');
 			console.log(addList);
 		}
 	}
