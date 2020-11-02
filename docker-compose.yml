@@ -10,6 +10,26 @@ services:
       - bot_token
     command: node .
 
+  redis: 
+    iamge: "redis:alpine"
+    command: redis-server
+    ports:
+      - "6379:6379"
+    volumes:
+      - $PWD/redis-data:/var/lib/redis
+      - $PWD/redis.conf:/usr/local/etc/redis/redis.conf
+
+    networks:
+      node_net:
+        ipv4_address: 172.28.1.4
+
+networks:
+  node_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+
 secrets:
   bot_token:
     file: secret_bot_token.txt

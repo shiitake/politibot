@@ -3,7 +3,9 @@ const path = require('path');
 const Discord = require('discord.js');
 const config = require('./config.json');
 const siteList = require('./sitelist.json');
+const db = require('./db')
 const url = require('url');
+
 const token = fs.readFileSync(path.resolve(__dirname, process.env.BOT_TOKEN), 'utf8').toString().trim();
 const client = new Discord.Client();
 
@@ -20,6 +22,7 @@ client.once('ready', () => {
 });
 
 var addList = [];
+
 
 function addChannel (channel) {
 	addList.push(channel);
@@ -73,7 +76,7 @@ client.on('message', message => {
 			var myUrl = message.content.substring(urlIndex, message.content.length + 1).split(' ')[0];
 			console.log(user + ' posted a url: '+ myUrl);
 
-			var hostname = url.parse(myUrl).hostname;			
+			var hostname = url.parse(myUrl).hostname.replace('www.', '');
 			var urlPath = url.parse(myUrl).path;
 			var matchingSite = siteList.find(x => x.url === hostname);
 			if (matchingSite === null || matchingSite === undefined)

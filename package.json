@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^12.4.0",
-    "eslint": "^7.11.0"
+    "eslint": "^7.11.0",
+    "ioredis": "^4.19.0"
   }
 }
