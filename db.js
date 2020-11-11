@@ -4,22 +4,14 @@ var state = {
   db: null,
 }
 
-var MODE_TEST = "mode_test"
-  , MODE_PRODUCTION = "mode_production"
-
-exports.MODE_TEST = MODE_TEST
-exports.MODE_PRODUCTION = MODE_PRODUCTION
-
 exports.connect = function(mode) {
-  state.db = new Redis()
-
-  // Use different DB when testing
-
-  if (mode === MODE_TEST) {
-    state.db.select(15)
-  }
+  console.log('creating redis connection.');
+  state.db = new Redis({
+  	port: 6379,
+  	host: 'redis-server'  	
+  }); 
 }
 
-exports.get = function() {
+exports.client = function() {
   return state.db
 }
